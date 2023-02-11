@@ -1,0 +1,149 @@
+.map
+.filter
+.reduce
+
+
+
+
+
+// // // // // primeiro aula de 07/02/2023
+// // // // // flex01010121   senhar para o W-f
+
+// // // // // var anoAtual = 2023
+// // // // // var nome = "Meirelles"
+// // // // // var maiorDeIdade = anoAtual >= 18
+
+
+// // // // // console.log(typeof maiorDeIdade);
+// // // // // // console.log(typeof nome);
+// // // // // // console.log(typeof anoAtual);
+// // // // // // console.log("filho", anoAtual - 1998);
+// // // // // // console.log("pai", anoAtual - 1962);
+// // // // // // console.log("mae", anoAtual - 1979)
+
+// // // // // var nome = "Meirelles"
+// // // // // // alert("seja bem vindo! "+ nome)  //aletc aparece uma caixa de aviso
+// // // // // // confirm("voce e maior de idade?") // confirm vai fazer uma pergunda para o usuario false e true
+// // // // // // var maiorDeIdade = confirm("voce e maior de idade?");  
+// // // // // // alert(maiorDeIdade)
+
+// // // // // var nome = prompt("DIgite seu nome");
+// // // // // var ano = prompt("DIgite o ano de nacimento");
+// // // // // var idade = 2023 - ano
+// // // // // alert ("Bem vindo " + nome + " Vc tem " + idade);
+
+
+// // // // // var idade = 8
+// // // // // if(idade >= 18){
+// // // // //   alert("vc e maior de idade")
+// // // // // }else{
+// // // // //   alert("vc e menor de idade")
+// // // // // }
+
+// // // // // var idade = 25
+// // // // // // alert ("voce e crianca")
+// // // // // // alert ("voce e jovem")
+// // // // // // alert ("vocc e adulto")
+// // // // // // alert ("vocc e idoso")
+
+// // // // // if(idade <= 13){
+// // // // //   alert ("voce e crianca")
+// // // // // }else if(idade >= 14 && idade <= 17){
+// // // // //   alert ("voce e jovem")
+// // // // // }else if(idade >= 18 && idade <= 51){
+// // // // //   alert ("voce e adulto")
+// // // // // }else{
+// // // // //   alert ("voce e idoso")
+// // // // // }
+
+// // // // // var produto_01 = 100
+// // // // // //coloque o valor do produto 1
+// // // // // var produto_02 = 0
+// // // // // //coloque o valor do produto 2
+// // // // // var produto_03 = 0
+// // // // // //coloque o valor do produto 3
+
+// // // // // var soma = produto_01 + produto_02 + produto_03
+
+// // // // // if(soma <= 99.99){
+// // // // //   soma *= 0.10
+// // // // // }else if (soma >= 100 && soma <= 500){
+// // // // //   soma *= 0.20
+// // // // // }else if(soma > 500){
+// // // // //   soma *= 0.30
+// // // // // }
+// // // // // alert("O valor da comissao e "+ soma + " Reais")
+
+// // // // ______________________________________________________________
+
+// // // // // segunda aula de 09/02/2023
+
+// // // // // var produto_01 = prompt("DIgite o valor do produto 1 ")
+// // // // // //coloque o valor do produto 1
+// // // // // var produto_02 = prompt("DIgite o valor do produto 2 ")
+// // // // // //coloque o valor do produto 2
+// // // // // var produto_03 = prompt("DIgite o valor do produto 3 ")
+// // // // // //coloque o valor do produto 3
+
+// // // // // var soma = Number(produto_01) + Number(produto_02) + Number(produto_03)
+
+// // // // // if(soma <= 99.99){
+// // // // //   soma *= 0.10
+// // // // // }else if (soma >= 100 && soma <= 500){
+// // // // //   soma *= 0.20
+// // // // // }else{
+// // // // //   soma *= 0.30
+// // // // // }
+// // // // // alert("O valor da comissao e "+ soma + " Reais")
+
+
+// // // // function calculaidadeAtual(anoNascimento){
+// // // //   var idadea = anoAtual - anoNascimento
+// // // //   return idadea
+// // // // }
+
+// // // // alert (calculaidadeAtual(1992,2023)); // pessoa 1
+// // // // alert (calculaidadeAtual(1992,2023)); // pessoa 2
+// // // // alert (calculaidadeAtual(1992,2023)); // pessoa 3
+// // // // if (idadePessoa3 <18){
+// // // //   alert("Menor de idade")
+// // // // }
+// // // // alert (calculaidadeAtual(1992,2023); // pessoa 4
+           
+
+// // // var produtos = [5.50,8.90,10.30]
+// // // produtos.forEach(function(produto){
+// // //   console.log(produto)
+// // // })
+
+// // var notas = [10,10,10,10,10]
+// // var soma = 0
+// // notas.forEach(function(nota){
+// //   soma+=nota
+// // })
+
+// function caluladora (arrayNotas){
+//   var soma = 0
+//   for(let i = 0; i < arrayNotas.length; i++){
+//     console.log(arrayNotas[i]);
+//     soma += arrayNotas[i]
+//     console.log(som);
+//     media = soma / arrayNotas.length
+//   }
+//   return media
+// }
+// var arrayDeNotas = [10,10,10,10,10]
+
+// console.log(caluladora (arrayDeNotas))
+
+// var sexo_f = 0
+// var sexo_m = 0
+// var sexos = ["F", "M","F", "M","F", "M","F", "M"]
+// sexos.forEach(function(sexo){
+//   if(sexo == "F"){
+//     sexo_f ++
+//   }else{
+//     sexo_m ++
+//   }
+// })
+// console.log(sexo_f,"Feminino\n",sexo_m,"Masculino")
