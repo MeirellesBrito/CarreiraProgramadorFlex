@@ -1,104 +1,93 @@
-// var pessoa = {
-//   nome:"Meirelles Brito",
-//   anoDeNacimento: 1998,
-//   corFavorita: "Preta",
-//   serieFavorita: "Nao tenho",
-//   livroFavorito: "Lei da guerra",
-//   veiculo: "Moto  bmw 310r",
-//   casa: "Manaus"
-
-  
-// }
-
-// console.log(pessoa);
-
-// class Pessoa{
-//   nome;
-//   RG;
-//   CPF;
-//   endereco;
-//   telefone;
-//   dataNasc;
-// }
-
-// var pessoa = new Pessoa();
-// pessoa.nome = "fernando"
-// pessoa.rg = 55657751
-// pessoa.CPF = 58722688774
-// pessoa.endereco = "Rua x casa Y"
-// pessoa.telefone = 9255574458
-// pessoa.dataNasc = 1998
-
-// console.log(pessoa);
-
-// -----------------------------------------------------------------------------
-
-// var anoAtual = 2023
-// class Pessoa{
-// nome;
-// anoNacs;
-
-
-// idade (anoNacs){
-//  var  x =  anoAtual - anoNacs
-//   return x
-// }
-
-// }
-// var objetos1 = new Pessoa();
-// objetos1.nome = "Fernando"
-// objetos1.anoNacs = 1998
-// console.log(objetos1.idade(objetos1.anoNacs));
-
-// -----------------------------------------------------------------------------
-
-// var anoAtual = 2023
-// class Pessoa{
-// nome;
-// anoNacs;
-// #idade;
-
-// constructor(nome , anoNacs){
-//   this.nome = nome;
-//   this.anoNacs =anoNacs;
-//   this.#idade = anoAtual - this.anoNacs;
-// }
-
-// exibirIdade(){
-//   return this.#idade;
-// }
-
-// }
-// var objetos1 = new Pessoa ("Meirelles", 1998);
-// objetos1.idade = 41
-// console.log(objetos1);
-// -----------------------------------------------------------------------------
-
-
 // class Funcionario{
-//   salarioBruto;
-//   descontos;
-//   salarioLiquido;
-
-//   constructor(salarioLiquido,descontos){
-//     this.salarioBruto = salarioLiquido;
-//     this.descontos = descontos;
-//   }
-//   calcularSalaruiLiquido(){
-//     this.salarioLiquido = this.salarioBruto - this.descontos;
-//   }
+//     constructor(salario,cargo){
+//         this.salario = salario
+//         this.cargo = cargo
+//     }
+//     calcularSalario(funcionarios) {
+//         let soma = 0;
+//         funcionarios.forEach(function(funcionario) {
+//           soma += funcionario.salario;
+//         });
+//         return soma;
+//     }
 // }
-// class Faxineira extends Funcionario{
+// var funcionarios = [     
+//     Funcionario(3000, "Programador dev2 "),
+//     Funcionario(4000, "Programador dev3 "),
+//     Funcionario(5000, "Programador dev4 "),    
+//     Funcionario(6000, "Programador dev2 "),   
+//     Funcionario(7000, "Programador dev2 "),
+//     Funcionario(8000, "Programador dev2 "),
+//     Funcionario(9000, "Programador dev2 "),
+//     Funcionario(10000, "Programador dev2 "),
+//     Funcionario(11000, "Programador dev2 "),
+//     Funcionario(12000, "Programador dev2 "),
+// ]
 
+// console.log(Funcionario.calcularSalario(funcionarios));
+
+// class Funcionario {
+//     constructor(salario, cargo) {
+//       this.salario = salario;
+//       this.cargo = cargo;
+//     }
+//     static calcularSalario(funcionarios) {
+//       let soma = 0;
+//       funcionarios.forEach(function(funcionario) {
+//         soma += funcionario.salario;
+//       });
+//       return soma;
+//     }
 // }
 // class Programador extends Funcionario{
-  
-// }
-// var faxineira = new Faxineira(2000,300)
-//   faxineira.calcularSalaruiLiquido();
-//   console.log(faxineira);
 
-// var programador = new Programador(6000,3000)
-//   programador.calcularSalaruiLiquido();
-//   programador.linguagens = ["js","PHP","PY","java"];
-//   console.log(programador);
+// }
+
+// var programador = new Programador (
+// programador(3000, "Programador dev2 "),
+// programador(4000, "Programador dev3 "),
+// programador(5000, "Programador dev4 "),
+// programador(6000, "Programador dev2 "),
+// programador(7000, "Programador dev2 "),
+// programador(8000, "Programador dev2 "),
+// programador(9000, "Programador dev2 "),
+// programador(10000, "Programador dev2 "),
+// programador(11000, "Programador dev2 "),
+// programador(12000, "Programador dev2 "),
+// );
+// console.log(Funcionario.calcularSalario(programador));
+  
+
+class Funcionario {
+  constructor(salario, cargo) {
+    this.salario = salario;
+    this.cargo = cargo;
+  }
+  calcularSalario() {
+    return this.salario;
+  }
+}
+
+class Programador extends Funcionario {
+  constructor(salario, cargo, Salario) {
+    super(salario, cargo);
+    this.Salario = Salario;
+  }
+  calcularSalario() {
+    return this.salario + this.Salario;
+  }
+}
+
+var programador = new Programador(
+   3000, "Programador dev2 ",
+   4000, "Programador dev3 ",
+   5000, "Programador dev4 ",    
+   6000, "Programador dev2 ",   
+   7000, "Programador dev2 ",
+   8000, "Programador dev2 ",
+   9000, "Programador dev2 ",
+   10000, "Programador dev2 ",
+   11000, "Programador dev2 ",
+   12000, "Programador dev2 "
+    );
+console.log(programador.calcularSalario());
