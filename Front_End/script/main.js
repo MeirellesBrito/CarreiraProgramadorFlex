@@ -1,0 +1,3 @@
+function pesquisarCep(){
+    alert("executei")
+}
