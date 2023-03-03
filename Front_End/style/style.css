@@ -1,3 +1,25 @@
+body{
+    background-image: url(https://static.escolakids.uol.com.br/conteudo_legenda/c15374255f16230a12fab7c8d89eee4e.jpg);
+    background-size: cover;
+}
+.input{
+    width: 80%;
+}
+#pesquesar{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+#spinner{
+    /* display: none; */
+    margin-left: 5px;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
+
 .listagem{
-    
 }

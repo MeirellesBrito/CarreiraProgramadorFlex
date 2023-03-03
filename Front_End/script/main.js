@@ -1,5 +1,5 @@
 function pesquisarCep(){
-
+    document.querySelector("#spinner").style.display = "block";
     var cep = document.querySelector("#cepDigitado").value
     fetch("https://viacep.com.br/ws/"+cep+"/json/")
     .then(response => response.json())
@@ -13,6 +13,7 @@ function pesquisarCep(){
                 <td>${response.cidade}</td>
                 <td>${response.estado}</td>
             </tr>`)
+            document.querySelector("#spinner").style.display = "none";
         }).catch((erro) => {
             alert(erro);
     })

@@ -9,20 +9,27 @@
     <title>Front End</title>
 </head>
 <body>
-    <input type="number" id="cepDigitado" placeholder=" Digite seu CEP">
-    <button onclick="pesquisarCep()">Pesquisar</button>
+    <div id="pesquesar">
+        <input type="number" id="cepDigitado" placeholder=" Digite seu CEP">
+        <button onclick="pesquisarCep()">Pesquisar</button>
+        <div class="spinner-border" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
-    <table id="listagem">
-        <tr>
-            <th>CEP</th>
-            <th>Logradouro</th>
-            <th>Complemento</th>
-            <th>Bairro</th>
-            <th>Cidade</th>
-            <th>Estado</th>
-        </tr>
-        
-    </table>
+    <div id="list">
+        <table id="listagem" class="table">
+            <tr>
+                <th>CEP</th>
+                <th>Logradouro</th>
+                <th>Complemento</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+            
+        </table>
+    </div>
 
     <script src="./script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
