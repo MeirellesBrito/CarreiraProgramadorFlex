@@ -9,7 +9,7 @@
     <title>Front End</title>
 </head>
 <body>
-    <input type="number" id="cep" placeholder=" Digite seu CEP">
+    <input type="number" id="cepDigitado" placeholder=" Digite seu CEP">
     <button onclick="pesquisarCep()">Pesquisar</button>
 
     <table id="listagem">
@@ -20,6 +20,14 @@
             <th>Bairro</th>
             <th>Cidade</th>
             <th>Estado</th>
+        </tr>
+        <tr>
+            <td id="cep"></td>
+            <td id="logradouro"></td>
+            <td id="complemento"></td>
+            <td id="bairro"></td>
+            <td id="cidade"></td>
+            <td id="estado"></td>
         </tr>
     </table>
 
