@@ -258,3 +258,5 @@
 //   programador.calcularSalaruiLiquido();
 //   programador.linguagens = ["js","PHP","PY","java"];
 //   console.log(programador);
+
+//localestora

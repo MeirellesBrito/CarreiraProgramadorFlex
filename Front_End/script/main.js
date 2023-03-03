@@ -4,12 +4,15 @@ function pesquisarCep(){
     fetch("https://viacep.com.br/ws/"+cep+"/json/")
     .then(response => response.json())
     .then(response => {
-            document.querySelector("#cep").innerText = response.cep
-            document.querySelector("#logradouro").innerText = response.logradouro
-            document.querySelector("#complemento").innerText = response.complemento
-            document.querySelector("#bairro").innerText = response.bairro
-            document.querySelector("#cidade").innerText = response.localidade
-            document.querySelector("#estado").innerText = response.uf
+            document.querySelector("#listagem").insertAdjacentHTML("beforeEnd",
+            `<tr>
+                <td>${response.cep}</td>
+                <td>${response.logradouro}</td>
+                <td>${response.complemento}</td>
+                <td>${response.bairro}</td>
+                <td>${response.cidade}</td>
+                <td>${response.estado}</td>
+            </tr>`)
         }).catch((erro) => {
             alert(erro);
     })
