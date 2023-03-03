@@ -1,6 +1,13 @@
-body{
+#background {
     background-image: url(https://static.escolakids.uol.com.br/conteudo_legenda/c15374255f16230a12fab7c8d89eee4e.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 .input{
     width: 80%;
