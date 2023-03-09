@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins' !important;
+}
+
+.navbar-nav .nav-link.active {
+    margin-right: 20px;
+    color: #242f51 !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: #2500f9 !important;
+}
+
+.botao-azul {
+    background-color: #2500f9;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: 1px solid #2500f9;
+    font-weight: 600;
+}
+
+.botao-azul:hover {
+    background-color: #fff;
+    color: #2500f9;
+    border: 1px solid #2500f9;
+}
+
+#esquerdo {
+    padding-top: 200px;
+}
+
+#esquerdo img {
+    padding-bottom: 30px;
+}
+
+h1 {
+   padding-bottom: 15px; 
+   font-size: 60px !important;
+   font-weight: bold !important;
+   color: #242f51 !important;
+}
+
+#esquerdo p {
+    padding-bottom: 20px;
+}
+
+#home {
+    background-image: url('/img/Vector Smart Object2.png'), url('/img/Layer 5.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+#features h2 {
+    color: #242f51;
+    font-weight: bold !important;
+    width: 400px;
+}
+
+#features .justify-content-center p {
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+#features h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #242f51;
+}
+
+#features .col-md-4 {
+    padding: 0px 50px;
+    margin-bottom: 50px;
+}
