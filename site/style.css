@@ -47,7 +47,7 @@ h1 {
 }
 
 #home {
-    background-image: url('/img/Vector Smart Object2.png'), url('/img/Layer 5.png');
+    background-image: url('./img/Vector Smart Object2.png'), url('./img/Layer 5.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -64,7 +64,7 @@ h1 {
     margin-bottom: 100px;
 }
 
-#features h3 {
+#features h4 {
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 18px;
@@ -75,4 +75,28 @@ h1 {
 #features .col-md-4 {
     padding: 0px 50px;
     margin-bottom: 50px;
+}
+
+
+#designed h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #242f51;
+    
+}
+#designed .col-md-6 {
+    padding: 0px 80px;
+    margin-bottom: 50px;
+}
+
+#designed .col-md-6 p {
+    width: 300px;
+    margin-bottom: 10px;
+    
+}
+#designed .col-md-6{
+    padding: 0px 10px;
+    background-color: #fff;
 }
