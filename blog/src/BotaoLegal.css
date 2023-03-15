@@ -1,0 +1,16 @@
+.botaoLegal{
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px;
+
+}
+
+.botaoLegal:hover{
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    transition: 2s;
+    padding: 50px;
+}

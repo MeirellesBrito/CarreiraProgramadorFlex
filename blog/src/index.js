@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Alert from './Alert';
 import { Botao } from './Botao';
+import BotaoLegal from './BotaoLegal';
+import ConsultarApi from './ConsultarApi';
+import LIstaImagens from './LIstaImagens';
+import LIstaTarefas from './LIstaTarefas';
 import Logo from './Logo';
+import MeuDiario from './MeuDiario/MeuDiario';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <h1>Ola mundo</h1>
-    <Botao/>
-    <Logo/>
+    <MeuDiario dia="1"/>
+    <MeuDiario dia="2"/>
+    <MeuDiario dia="3"/>
+    <MeuDiario dia="4"/>
+
   </div>
 );
